@@ -1,0 +1,433 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topBar {
+    height: 10rem;
+    border: 0.25rem ridge #4987c3;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+    display: grid;
+    grid-template-areas:    "logoMsi contacInfo instagramFacebook"
+                            "logoMsi menu instagramFacebook";
+}
+
+.logoMsi {
+    width: 50%;
+    grid-area: logoMsi;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacInfo {
+    grid-area: contacInfo;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+}
+
+.clock {
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.clock img {
+    margin: 0.25rem;
+}
+
+.clock p {
+    display: flex;
+    flex-direction: column;
+    margin: 0.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.90rem;
+}
+
+.phone {
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.phone img {
+    margin: 0.25rem;
+}
+
+.phone p {
+    display: flex;
+    flex-direction: column;
+    margin: 0.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.90rem;
+}
+
+.e-mail {
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.e-mail img {
+    margin: 0.25rem;
+}
+
+.e-mail p {
+    display: flex;
+    flex-direction: column;
+    margin: 0.25rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.90rem;
+}
+
+.instagramFacebook {
+    height: 9rem;
+    grid-area: instagramFacebook;
+    display: flex;
+    justify-content: right ;
+    align-items: end;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu ul li {
+    text-decoration: none;
+    margin: 0.25rem;
+    text-align: center;
+    display: flex;
+    padding: 0.25rem 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.menuBar a {
+    text-decoration: none;
+    color: #4987c3;
+}
+
+.menu ul li a:hover {
+    background-color: #4987c3;
+    border-radius: 0.25rem;
+    color: white;
+    transition: 0.5s;
+    padding: 0.15rem 0.3rem;
+    font-weight: bold;
+    margin: 0.15rem;
+    text-shadow: inset;
+
+}
+
+.home a {
+    text-decoration: none;
+    color: white;
+}
+
+.home {
+    background-color: #4987c3;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.15rem 0.3rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.15rem;
+}
+
+.videoInst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 5px;
+    display: inline-block;
+}
+
+footer {
+    padding: 0.25rem;
+}
+
+.copyRight {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: bolder;
+    color: darkgrey;
+}
+
+.empresa{
+    grid-area: empresa;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin: 1Rem;
+}
+
+main {
+    height: 46rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-template-areas: "empresa empresa"
+                         "whatsapp whatsapp";    
+}
+
+.empresa p{
+    width: 50rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 150;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.whatsapp{
+    grid-area: whatsapp;
+}
+
+.maq{
+    height: 100%;
+}
+.machine {
+    grid-template-areas: "lather lather"
+                            "mill mill"
+                            "lather lather"
+                            "mill mill";
+                            margin: 0rem 3rem;
+}
+
+.lather{
+    grid-area: lather;
+    display: flex;
+}
+
+.lather p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: smaller;
+    font-weight: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.mill {
+    grid-area: mill;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mill p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: smaller;
+    font-weight: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.imagenes{
+    height: 50%;
+}
+
+.galeria {
+    margin: 2.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.galeria div img{
+        border-radius: 20px;
+}
+
+.galeria div span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.direccion {
+    margin: 2rem;
+    display: flex;
+    flex-direction:row-reverse ;
+    justify-content: center;
+}
+
+.datos {
+    margin: 2.5rem;
+    display: flex  ;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.datos span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+}
+
+.formularioContacto{
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.formularioContacto form fieldset legend {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-weight: 200;
+    
+}
+
+.formularioContacto form fieldset div label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: smaller;
+    font-style: oblique;
+    font-weight: 200;
+    margin: 0.2rem;
+}
+
+/*mq*/
+
+/*mq 768px*/
+
+@media screen and (max-width:768px) {
+
+/*index*/
+    .topBar{
+        width: 766px;
+        
+        grid-template-areas: "logoMsi contacInfo"
+                            "menu menu"
+                            "instagramFacebook instagramFacebook";
+    }
+    .logoMsi{
+        width: 80%;
+    }
+
+    .instagramFacebook{
+        display: none;
+
+    }
+    .menu{
+        margin-top: 1.5rem;
+    }
+
+/*Nosotros*/
+
+    .empresa {
+        grid-template-areas: "fotoEmpresa"
+                             "historiaEmpresa";
+        flex-direction: column;
+       align-items: center;
+      
+    }
+
+    .empresa p{
+        width: 40rem;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+    }
+/*Maquinaria*/
+    .lather img{
+        width: 50%;
+    }
+    .lather p {
+        font-size: 1rem;
+    }
+    .mill img{
+        width: 50%;
+    }
+    .mill p {
+        font-size: 1rem;
+    }
+main.{
+    height: 100rem;
+}
+}
+    
+/*mq 480*/
+
+@media screen and (max-width:480px) {
+
+/*index*/
+    .contacInfo{
+        display: none;
+    }
+    .topBar{
+        width: 475px;
+        height: 7rem;
+        grid-template-areas:    "logoMsi"
+                                 "menu";
+        align-items: center;                                         
+    }
+    .logoMsi{
+        width: 25%;
+    }
+    .menu{
+        margin-top: 0.5rem;        
+    }
+    .menu ul li {
+        font-size: 0.7rem;
+        padding: 0.2rem;
+    }
+    .videoInst {
+        align-items: flex-end;
+        margin: 0.5rem;
+
+    }
+    
+/*Nosotros*/
+
+    .empresa {
+        grid-template-areas: "fotoEmpresa"
+                             "historiaEmpresa";
+        flex-direction: column;
+       align-items: center;
+    }
+    .empresa p{
+        width: 28rem;
+        font-size: 0.8rem;
+    }
+    .empresa img{
+        width: 100%;
+        
+    }
+/*Galeria imagenes*/
+    
+    .galeria div img{
+        width: 100%;
+    }
+ }
+
+           

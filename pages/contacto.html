@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <!--font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--Llamado Css-->
+
+    <link rel="stylesheet" href="..//css/main.css">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="topBar">
+        <div class="logoMsi">
+            <img src="../img/logotipoMSI.jpg" alt="Logo metalurgica san isidro">
+            <!-- Informacion empresa-->
+        </div>
+        <div class="contacInfo">
+            <div class="clock">
+                <img src="../img/reloj.png" alt="Icono reloj">
+                <p class="schedule">
+                     Horario de atencion:
+                     <span class="horariOpen"> 8.00-12.30 / 13.30-17.00</span>
+                </p>
+            </div>
+            <div class="phone">
+                <img src="../img/telefono.png" alt="Telefono">
+                <p class="phoneNumber">
+                    <span>Telefono: </span>
+                    <span class="numberPhone">+54-011-4765-1845</span>
+                </p>
+            </div>
+            <div class="e-mail">
+                <img src="../img/email.png" alt="E-mail">
+                <p class="e-maiL">
+                    <span> E-mail: </Span>
+                    <Span class="e-mailDir"> metalurgicasi@yahoo.com.ar</span>
+                </p>
+            </div>
+        </div>
+        <!--Menu-->
+        <nav class="menu">
+            <ul>
+                <li class="menuBar"> <a href="../index.html">HOME</a> </li>
+                <li class="menuBar"> <a href="nosotros.html"> NOSOTROS</a> </li>
+                <li class="menuBar"> <a href="maquinaria.html">MAQUINARIA</a> </li>
+                <li class="menuBar"> <a href="galeriadeimagenes.html">GALERIA DE IMAGENES</a> </li>
+                <li class="home"> <a href="contacto.html">CONTACTO</a> </li>
+            </ul>
+        </nav>
+        <!--Redes Sociales-->
+        <div class="instagramFacebook">
+            <a class="instagram" href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
+            
+            <a class="facebook" href="https://www.facebook.com/metalurgicasi" target="_blank"><img src="../img/simbolo-de-la-aplicacion-de-facebook.png" alt="facebook"></a>
+            
+        </div>
+
+    </header>
+
+    <main>
+        <h1 class="direccion">
+        <div class="datos">
+            <img width="16" height="16" src="../img/ubicacion.png" alt="Ubicacion">
+            <span> Roberto Wernicke 1438, Villa adelina, Buenos aires</span>
+            <br>
+            <img width="16" height="16" src="../img/llamada-telefonica.png" alt="Telefono">
+            <span> +54-011-4765-1845</span>
+            <br>
+            <img width="16" height="16" src="../img/email.png" alt="">
+            <span> metalurgicasi@yahoo.com.ar</span>
+            <br>
+        </div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.7712462021273!2d-58.54241678543789!3d-34.50868318048432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb08f28fb6041%3A0xa82f2bef94866f14!2sMetal%C3%BArgica%20San%20Isidro%20S.R.L.!5e0!3m2!1ses-419!2sar!4v1650134784378!5m2!1ses-419!2sar"
+                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </h1>
+
+        <h2 class="formularioContacto">
+            <form>
+                <fieldset>
+                    <legend>
+                        Envia tus datos
+                    </legend>
+                    <div>
+                        <label for="Nombre">
+                            Nombre
+                        </label>
+                        <input type="text" name="Nombre" placeholder="Ingresa tu nombre">
+                    </div>
+
+                    <div>
+                        <label for="mail">
+                            E-mail
+                        </label>
+                        <input type="email" name="mail" placeholder="Ingresa tu mail">
+                    </div>
+
+                    <div>
+                        <label for="Telefono">
+                            Telefono
+                        </label>
+                        <input type="tel" name="Telefono" placeholder="Ingresa tu telefono">
+                    </div>
+
+                    <div>
+                        <label for="pais">
+                            Selecciona tu pais
+                        </label>
+                        <select name="pais id="">
+                            <option value="Argentina"> Argentina</option>
+                            <option value="Brasil"> Brasil</option>
+                            <option value="Uruguay"> Uruguay</option>
+                        </select>
+                    </div>
+                    <!--Solo se habilitaria si seleccionas Argentina-->
+                    <div>
+                        <label for="Provincia">
+                            Selecciona tu porvincia
+                        </label>
+                        <select name="provincia id="">
+                            <option value=" Buenos Aires"> Buenos Aires</option>
+                            <option value="CABA"> CABA</option>
+                            <option value="Catamarca"> Catamarca</option>
+                            <option value="Chaco"> Chaco</option>
+                            <option value="Corrientes"> Corrientes</option>
+                            <option value="Cordoba"> Cordoba</option>
+                            <option value="Entre Rios"> Entre Rios</option>
+                            <option value="Formosa"> Formosa </option>
+                            <option value="Jujuy"> Jujuy</option>
+                            <option value="La Pampa"> La Pampa</option>
+                            <option value="La Rioja"> La Rioja</option>
+                            <option value="Mendoza"> Mendoza</option>
+                            <option value="Misiones"> Misiones</option>
+                            <option value="Neuquen"> Neuquen</option>
+                            <option value="Rio Negro"> Rio Negro</option>
+                            <option value="Salta"> Salta</option>
+                            <option value="San Juan"> San Juan</option>
+                            <option value="San Luis"> San Luis</option>
+                            <option value="Santa Cruz"> Santa Cruz </option>
+                            <option value="Santa Fe"> Santa Fe</option>
+                            <option value="Santiago del Estero "> Santiago del Estero</option>
+                            <option value="Tierra del Fuego"> Tierra del Fuego</option>
+                            <option value="Tucuman"> Tucuman</option>
+                            <br>
+                            <br>
+
+                            
+                        </select>
+                        <div>
+                            <textarea name="asunto" id="asunto" placeholder="Ingrese comentario" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Resetear">
+                    </div>
+                </fieldset>
+
+
+                <h2 class="whatsapp">
+                <!--Link a whatsapp web-->
+                
+                <a href="https://web.whatsapp.com/send?l=en&phone=5491168157876" target="_blank"><img src="../img/whatsapp.png" alt="whatsapp"></a>
+            </h2>
+        </main>
+        <footer>
+            <hr>
+            <div class="copyRight">
+                <h3>&copy; By Gaston Feo 2022</h3>
+            </div>
+        </footer>
+</body>
+
+</html>
