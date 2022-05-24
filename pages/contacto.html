@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   <!--font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- llamado CDM bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
     <!--Llamado Css-->
 
     <link rel="stylesheet" href="..//css/main.css">
@@ -17,7 +23,7 @@
     <title>Contacto</title>
 </head>
 
-<body class="color-change-3x">
+<body>
     <header class="topBar">
         <div class="logoMsi">
             <img src="../img/logotipoMSI.jpg" alt="Logo metalurgica san isidro">
@@ -27,8 +33,8 @@
             <div class="clock">
                 <img src="../img/reloj.png" alt="Icono reloj">
                 <p class="schedule">
-                     Horario de atencion:
-                     <span class="horariOpen"> 8.00-12.30 / 13.30-17.00</span>
+                    Horario de atencion:
+                    <span class="horariOpen"> 8.00-12.30 / 13.30-17.00</span>
                 </p>
             </div>
             <div class="phone">
@@ -58,77 +64,61 @@
         </nav>
         <!--Redes Sociales-->
         <div class="instagramFacebook">
-            <a class="instagram" href="https://instagram.com" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
-            
-            <a class="facebook" href="https://www.facebook.com/metalurgicasi" target="_blank"><img src="../img/simbolo-de-la-aplicacion-de-facebook.png" alt="facebook"></a>
-            
-        </div>
+            <a class="instagram" href="https://instagram.com" target="_blank"><img src="../img/instagram.png"
+                    alt="instagram"></a>
 
+            <a class="facebook" href="https://www.facebook.com/metalurgicasi" target="_blank"><img
+                    src="../img/simbolo-de-la-aplicacion-de-facebook.png" alt="facebook"></a>
+        </div>
     </header>
 
     <main>
-        <h1 class="direccion">
-        <div class="datos">
-            <img width="16" height="16" src="../img/ubicacion.png" alt="Ubicacion">
-            <span> Roberto Wernicke 1438, Villa adelina, Buenos aires</span>
-            <br>
-            <img width="16" height="16" src="../img/llamada-telefonica.png" alt="Telefono">
-            <span> +54-011-4765-1845</span>
-            <br>
-            <img width="16" height="16" src="../img/email.png" alt="">
-            <span> metalurgicasi@yahoo.com.ar</span>
-            <br>
-        </div>
+        <h1 class="contacto">
+            <div class="direccion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.7712462021273!2d-58.54241678543789!3d-34.50868318048432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb08f28fb6041%3A0xa82f2bef94866f14!2sMetal%C3%BArgica%20San%20Isidro%20S.R.L.!5e0!3m2!1ses-419!2sar!4v1650134784378!5m2!1ses-419!2sar"
+                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.7712462021273!2d-58.54241678543789!3d-34.50868318048432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb08f28fb6041%3A0xa82f2bef94866f14!2sMetal%C3%BArgica%20San%20Isidro%20S.R.L.!5e0!3m2!1ses-419!2sar!4v1650134784378!5m2!1ses-419!2sar"
-                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="datos">
+                <img width="16" height="16" src="../img/ubicacion.png" alt="Ubicacion">
+                <span> Roberto Wernicke 1438, Villa adelina, Buenos aires</span>
+                <br>
+                <img width="16" height="16" src="../img/llamada-telefonica.png" alt="Telefono">
+                <span> +54-011-4765-1845</span>
+                <br>
+                <img width="16" height="16" src="../img/email.png" alt="">
+                <span> metalurgicasi@yahoo.com.ar</span>
+                <br>
+            </div>
         </h1>
 
-        <h2 class="formularioContacto">
-            <form>
-                <fieldset>
-                    <legend>
-                        Envia tus datos
-                    </legend>
-                    <div>
-                        <label for="Nombre">
-                            Nombre
-                        </label>
-                        <input type="text" name="Nombre" placeholder="Ingresa tu nombre">
-                    </div>
+        <h2 class="formulario">
+            <form class="form-inline formularioContacto" action="/action_page.php">
+                <label for="nombre" class="mr-sm-2">Nombre:</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Ej. Juan" id="nombre">
 
-                    <div>
-                        <label for="mail">
-                            E-mail
-                        </label>
-                        <input type="email" name="mail" placeholder="Ingresa tu mail">
-                    </div>
+                <label for="apellido" class="mr-sm-2">Apellido</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="EJ. Perez" id="apellido">
 
-                    <div>
-                        <label for="Telefono">
-                            Telefono
-                        </label>
-                        <input type="tel" name="Telefono" placeholder="Ingresa tu telefono">
-                    </div>
+                <label for="e-maiL" class="mr-sm-2">Email</label>
+                <input type="email" class="form-control mb-2 mr-sm-2" placeholder="EJ. juanperes@ejemplo.com" id="mail">
 
-                    <div>
-                        <label for="pais">
-                            Selecciona tu pais
-                        </label>
-                        <select name="pais id="">
-                            <option value="Argentina"> Argentina</option>
+                <label for="telefono" class="mr-sm-2">Telefono</label>
+                <input type="tel" class="form-control mb-2 mr-sm-2" placeholder="EJ. +54-011-1234-5678" id="tel">
+
+                <div class="form-check mb-2 mr-sm-2">
+                    <label class="form-check-label">
+                        <select name="Pais" class="custom-select">
+                            <option value=" Argentina"> Argentina</option>
                             <option value="Brasil"> Brasil</option>
                             <option value="Uruguay"> Uruguay</option>
                         </select>
-                    </div>
-                    <!--Solo se habilitaria si seleccionas Argentina-->
-                    <div>
-                        <label for="Provincia">
-                            Selecciona tu porvincia
-                        </label>
-                        <select name="provincia id="">
+                </div>
+                <div class="form-check mb-2 mr-sm-2">
+                    <label class="form-check-label">
+                        <select name="Provincia" class="custom-select">
                             <option value=" Buenos Aires"> Buenos Aires</option>
                             <option value="CABA"> CABA</option>
                             <option value="Catamarca"> Catamarca</option>
@@ -152,35 +142,37 @@
                             <option value="Santiago del Estero "> Santiago del Estero</option>
                             <option value="Tierra del Fuego"> Tierra del Fuego</option>
                             <option value="Tucuman"> Tucuman</option>
-                            <br>
-                            <br>
-
-                            
                         </select>
-                        <div>
-                            <textarea name="asunto" id="asunto" placeholder="Ingrese comentario" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comentario:</label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                  </div>
+                  <br>
+                <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+            </form>
+        </h2>
 
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Resetear">
-                    </div>
-                </fieldset>
+        <h2 class="whatsapp pulsate-bck">
+            <!--Link a whatsapp web-->
+            <a href="https://web.whatsapp.com/send?l=en&phone=5491168157876" target="_blank"><img
+                    src="../img/whatsapp.png" alt="whatsapp"></a>
 
+        </h2>
+    </main>
 
-                <h2 class="whatsapp pulsate-bck">
-                <!--Link a whatsapp web-->
-                
-                <a href="https://web.whatsapp.com/send?l=en&phone=5491168157876" target="_blank"><img src="../img/whatsapp.png" alt="whatsapp"></a>
-            </h2>
-        </main>
-        <footer>
-            <hr>
-            <div class="copyRight">
-                <h3>&copy; By Gaston Feo 2022</h3>
-            </div>
-        </footer>
+    <footer>
+        <hr>
+        <div class="copyRight">
+            <h3>&copy; By Gaston Feo 2022</h3>
+        </div>
+    </footer>
+
+    <!-- JB bootstrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

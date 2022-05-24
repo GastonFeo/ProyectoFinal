@@ -250,16 +250,20 @@
   
 
 footer {
-    padding: 0.25rem;
+    padding: 0.2rem;   
 }
 
 .copyRight {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
-    font-style: italic;
-    font-weight: bolder;
     color: darkgrey;
+}
+
+.copyRight h3{
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: italic;
+
 }
 
 .empresa{
@@ -270,11 +274,12 @@ footer {
     margin: 1Rem;
 }
 
-main {
+.nos {
     height: 46rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     grid-template-areas: "empresa empresa"
                          "whatsapp whatsapp";    
 }
@@ -362,14 +367,18 @@ main {
     justify-content: center;
 }
 
-.direccion {
-    margin: 2rem;
+.contacto{
+    grid-template-areas:  "direccion datos";
     display: flex;
-    flex-direction:row-reverse ;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 3rem
+}
+.direccion {
+    grid-area: direccion;
 }
 
 .datos {
+    grid-area: datos;
     margin: 2.5rem;
     display: flex  ;
     flex-direction: column;
@@ -381,27 +390,21 @@ main {
     font-size: 1.3rem;
 }
 
-.formularioContacto{
-    margin: 1.5rem;
-    display: flex;
+.formulario{
+    grid-template-areas: "formularioContacto";
     justify-content: center;
 }
 
-.formularioContacto form fieldset legend {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    font-style: oblique;
-    font-weight: 200;
-    
+
+.formularioContacto{
+    grid-area: formularioContacto;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
 }
 
-.formularioContacto form fieldset div label {
-    font-family: 'Open Sans', sans-serif;
-    font-size: smaller;
-    font-style: oblique;
-    font-weight: 200;
-    margin: 0.2rem;
-}
 
 /*mq*/
 
