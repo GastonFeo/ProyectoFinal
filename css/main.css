@@ -6,31 +6,18 @@
 }
 
 
-.topBar {
-    height: 10rem;
-    background-color: white;
-    border: 0.25rem ridge #4987c3;
-    border-radius: 0.5rem;
-    margin: 0.2rem;
-    display: grid;
-    grid-template-areas:    "logoMsi contacInfo instagramFacebook"
-                            "logoMsi menu instagramFacebook";
-}
 
-.logoMsi {
-    width: 50%;
-    grid-area: logoMsi;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
+
+
 
 .contacInfo {
     grid-area: contacInfo;
+    height: 2rem;
+    background-color: #a2d6fa;
     display: flex;
-    justify-content: space-around;
-    margin-top: 2rem;
-
+    justify-content:space-evenly ;
+    border-bottom-left-radius: 2rem;
 }
 
 .clock {
@@ -93,18 +80,19 @@
     display: flex;
     justify-content: right ;
     align-items: end;
+    margin-bottom: 0.5rem;
 }
 
 .menu {
     grid-area: menu;
 }
 
-.menu ul {
+.menu div ul {
     display: flex;
     justify-content: space-around;
 }
 
-.menu ul li {
+.menu div ul li {
     text-decoration: none;
     margin: 0.25rem;
     text-align: center;
@@ -153,7 +141,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    
 }
 
 .whatsapp {
@@ -236,6 +224,7 @@ footer {
 }
 
 .nos {
+    background-color: #c2c3bc;
     height: 46rem;
     display: flex;
     flex-direction: column;
