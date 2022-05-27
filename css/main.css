@@ -16,7 +16,7 @@
     height: 2rem;
     background-color: #a2d6fa;
     display: flex;
-    justify-content:space-evenly ;
+    justify-content: space-evenly;
     border-bottom-left-radius: 2rem;
 }
 
@@ -78,7 +78,7 @@
     height: 9rem;
     grid-area: instagramFacebook;
     display: flex;
-    justify-content: right ;
+    justify-content: right;
     align-items: end;
     margin-bottom: 0.5rem;
 }
@@ -141,7 +141,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    width: 100%;
+
 }
 
 .whatsapp {
@@ -152,8 +153,8 @@
 }
 
 .pulsate-bck {
-	-webkit-animation: pulsate-bck 0.7s infinite ;
-	        animation: pulsate-bck 0.7s infinite ;
+    -webkit-animation: pulsate-bck 0.7s infinite;
+    animation: pulsate-bck 0.7s infinite;
 }
 
 /* ----------------------------------------------
@@ -168,38 +169,43 @@
  * animation pulsate-bck
  * ----------------------------------------
  */
- @-webkit-keyframes pulsate-bck {
+@-webkit-keyframes pulsate-bck {
     0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
-  }
-  @keyframes pulsate-bck {
+}
+
+@keyframes pulsate-bck {
     0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      -webkit-transform: scale(0.9);
-              transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
+}
+
 
 footer {
-    padding: 0.2rem;   
+    padding: 0.2rem;
 }
 
 .copyRight {
@@ -208,14 +214,14 @@ footer {
     color: darkgrey;
 }
 
-.copyRight h3{
+.copyRight h3 {
     font-size: 1rem;
     font-weight: bolder;
     font-style: italic;
 
 }
 
-.empresa{
+.empresa {
     grid-area: empresa;
     display: flex;
     flex-direction: row;
@@ -225,19 +231,20 @@ footer {
 
 .nos {
     background-color: #c2c3bc;
-    height: 46rem;
+    padding: 0.5rem;
+    height: 42rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     grid-template-areas: "empresa empresa"
-                         "whatsapp whatsapp";    
+        "whatsapp whatsapp";
 }
 
-.empresa p{
+.empresa p {
     width: 50rem;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 150;
+    font-weight: bold;
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -246,27 +253,33 @@ footer {
     text-align: center;
 }
 
-.whatsapp{
+.fotoEmpresa img {
+    width: 80%;
+}
+
+.whatsapp {
     grid-area: whatsapp;
 }
 
-.maq{
+.maq {
     height: 100%;
 }
+
 .machine {
     grid-template-areas: "lather lather"
-                            "mill mill"
-                            "lather lather"
-                            "mill mill";
-                            margin: 0rem 3rem;
+        "mill mill"
+        "lather lather"
+        "mill mill";
+    margin: 0rem 3rem;
 }
 
-.lather{
+.lather {
     grid-area: lather;
     display: flex;
 }
 
 .lather p {
+    color: whitesmoke;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: smaller;
@@ -284,6 +297,7 @@ footer {
 }
 
 .mill p {
+    color: whitesmoke;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: smaller;
@@ -294,19 +308,18 @@ footer {
     width: 50%;
 }
 
-.imagenes{
+.imagenesNos {
     height: 50%;
 }
 
 .galeria {
-    margin: 2.5rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    width: 45%;
 }
 
-.galeria div img{
-        border-radius: 20px;
+.galeria div img {
+    border-radius: 20px;
+
+
 }
 
 .galeria div span {
@@ -317,12 +330,13 @@ footer {
     justify-content: center;
 }
 
-.contacto{
-    grid-template-areas:  "direccion datos";
+.contacto {
+    grid-template-areas: "direccion datos";
     display: flex;
     justify-content: space-evenly;
     margin: 3rem
 }
+
 .direccion {
     grid-area: direccion;
 }
@@ -330,9 +344,9 @@ footer {
 .datos {
     grid-area: datos;
     margin: 2.5rem;
-    display: flex  ;
+    display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .datos span {
@@ -340,15 +354,15 @@ footer {
     font-size: 1rem;
 }
 
-.formulario{
+.formulario {
     grid-template-areas: "formularioContacto";
     justify-content: center;
 }
 
 
-.formularioContacto{
+.formularioContacto {
     grid-area: formularioContacto;
-    margin: 1.5rem;
+    padding: 1rem 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,113 +376,129 @@ footer {
 
 @media screen and (max-width:768px) {
 
-/*index*/
-    .topBar{
-        width: 766px;
-        
-        grid-template-areas: "logoMsi contacInfo"
-                            "menu menu"
-                            "instagramFacebook instagramFacebook";
-    }
-    .logoMsi{
-        width: 80%;
-    }
-
-    .instagramFacebook{
+    /*index*/
+    .clock {
         display: none;
-
-    }
-    .menu{
-        margin-top: 1.5rem;
     }
 
-/*Nosotros*/
+    .contacInfo div p span {
+        font-size: small;
+    }
+
+    .nos {
+        height: 49.5rem;
+    }
+
+
+    /*Nosotros*/
 
     .empresa {
         grid-template-areas: "fotoEmpresa"
-                             "historiaEmpresa";
+            "historiaEmpresa";
         flex-direction: column;
-       align-items: center;
-      
+        align-items: center;
+        justify-content: center;
     }
 
-    .empresa p{
+    .fotoEmpresa {
+        display: flex;
+        justify-content: center;
+    }
+
+    .empresa p {
         width: 40rem;
         font-size: 1rem;
         align-items: center;
         justify-content: center;
         padding: 1px;
     }
-/*Maquinaria*/
-    .lather img{
-        width: 50%;
+
+    /*Maquinaria*/
+    .lather img {
+        width: 25%;
     }
+
     .lather p {
         font-size: 1rem;
     }
-    .mill img{
-        width: 50%;
+
+    .mill img {
+        width: 25%;
     }
+
     .mill p {
         font-size: 1rem;
     }
-.main{
-    height: 100rem;
+
+    .main {
+        height: 90rem;
+    }
 }
+
+/*Galeria de imagenes*/
+
+.galeria div img {
+    width: 20%;
 }
-    
+
 /*mq 480*/
 
 @media screen and (max-width:480px) {
 
-/*index*/
-    .contacInfo{
+    /*index*/
+    .contacInfo {
         display: none;
     }
-    .topBar{
+
+    .topBar {
         width: 475px;
         height: 7rem;
-        grid-template-areas:    "logoMsi"
-                                 "menu";
-        align-items: center;                                         
+        grid-template-areas: "logoMsi"
+            "menu";
+        align-items: center;
     }
-    .logoMsi{
+
+    .logoMsi {
         width: 25%;
     }
-    .menu{
-        margin-top: 0.5rem;        
+
+    .menu {
+        margin-top: 0.5rem;
     }
+
     .menu ul li {
         font-size: 0.7rem;
         padding: 0.2rem;
     }
+
     .videoInst {
         align-items: flex-end;
         margin: 0.5rem;
 
     }
-    
-/*Nosotros*/
+
+    /*Nosotros*/
 
     .empresa {
         grid-template-areas: "fotoEmpresa"
-                             "historiaEmpresa";
+            "historiaEmpresa";
         flex-direction: column;
-       align-items: center;
+        align-items: center;
     }
-    .empresa p{
+
+    .empresa p {
         width: 28rem;
         font-size: 0.8rem;
     }
-    .empresa img{
-        width: 100%;
-        
-    }
-/*Galeria imagenes*/
-    
-    .galeria div img{
-        width: 100%;
-    }
- }
 
-           
+    .empresa img {
+        width: 100%;
+
+    }
+
+    /*Galeria imagenes*/
+
+    .galeria div img {
+        width: 100%;
+    }
+}
