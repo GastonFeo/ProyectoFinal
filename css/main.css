@@ -238,7 +238,7 @@ footer {
     justify-content: center;
     align-items: center;
     grid-template-areas: "empresa empresa"
-        "whatsapp whatsapp";
+                         "whatsapp whatsapp";
 }
 
 .empresa p {
@@ -318,8 +318,6 @@ footer {
 
 .galeria div img {
     border-radius: 20px;
-
-
 }
 
 .galeria div span {
@@ -389,7 +387,6 @@ footer {
         height: 49.5rem;
     }
 
-
     /*Nosotros*/
 
     .empresa {
@@ -437,8 +434,14 @@ footer {
 
 /*Galeria de imagenes*/
 
-.galeria div img {
-    width: 20%;
+    .galeria {
+        width: 100%;
+}
+
+/*contactos*/
+.formularioContacto {
+    padding: 1rem 8rem;
+   ;
 }
 
 /*mq 480*/
@@ -450,33 +453,6 @@ footer {
         display: none;
     }
 
-    .topBar {
-        width: 475px;
-        height: 7rem;
-        grid-template-areas: "logoMsi"
-            "menu";
-        align-items: center;
-    }
-
-    .logoMsi {
-        width: 25%;
-    }
-
-    .menu {
-        margin-top: 0.5rem;
-    }
-
-    .menu ul li {
-        font-size: 0.7rem;
-        padding: 0.2rem;
-    }
-
-    .videoInst {
-        align-items: flex-end;
-        margin: 0.5rem;
-
-    }
-
     /*Nosotros*/
 
     .empresa {
@@ -485,7 +461,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
+    
     .empresa p {
         width: 28rem;
         font-size: 0.8rem;
@@ -501,4 +477,22 @@ footer {
     .galeria div img {
         width: 100%;
     }
+
+     /*Maquinaria*/
+     .lather img {
+        width: 30%;
+    }
+
+    .lather p {
+        font-size:0.9rem;
+    }
+
+    .mill img {
+        width: 30%;
+    }
+
+    .mill p {
+        font-size: 0.9rem;
+    }
+
 }
