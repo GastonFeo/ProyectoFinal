@@ -1,0 +1,128 @@
+/*mq*/
+
+/*mq 768px*/
+
+@media screen and (max-width:768px) {
+
+    /*index*/
+    .clock {
+        display: none;
+    }
+
+    .contacInfo div p span {
+        font-size: small;
+    }
+
+    .nos {
+        height: 49.5rem;
+    }
+
+    /*Nosotros*/
+
+    .empresa {
+        grid-template-areas: "fotoEmpresa"
+            "historiaEmpresa";
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fotoEmpresa {
+        display: flex;
+        justify-content: center;
+    }
+
+    .empresa p {
+        width: 40rem;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+    }
+
+    /*Maquinaria*/
+    .lather img {
+        width: 25%;
+    }
+
+    .lather p {
+        font-size: 1rem;
+    }
+
+    .mill img {
+        width: 25%;
+    }
+
+    .mill p {
+        font-size: 1rem;
+    }
+
+    .main {
+        height: 90rem;
+    }
+}
+
+/*Galeria de imagenes*/
+
+    .galeria {
+        width: 100%;
+}
+
+/*contactos*/
+.formularioContacto {
+    padding: 1rem 8rem;
+   ;
+}
+
+/*mq 480*/
+
+@media screen and (max-width:480px) {
+
+    /*index*/
+    .contacInfo {
+        display: none;
+    }
+
+    /*Nosotros*/
+
+    .empresa {
+        grid-template-areas: "fotoEmpresa"
+            "historiaEmpresa";
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .empresa p {
+        width: 28rem;
+        font-size: 0.8rem;
+    }
+
+    .empresa img {
+        width: 100%;
+
+    }
+
+    /*Galeria imagenes*/
+
+    .galeria div img {
+        width: 100%;
+    }
+
+     /*Maquinaria*/
+     .lather img {
+        width: 30%;
+    }
+
+    .lather p {
+        font-size:0.9rem;
+    }
+
+    .mill img {
+        width: 30%;
+    }
+
+    .mill p {
+        font-size: 0.9rem;
+    }
+
+}

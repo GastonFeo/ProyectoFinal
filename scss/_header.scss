@@ -1,0 +1,58 @@
+header{
+    .container-fluid{
+        .contacInfo {
+            grid-area: contacInfo;
+            height: 2rem;
+            background-color: $fondo-barras;
+            @include flex (flex , row, space-evenly);
+            border-bottom-left-radius: 2rem;
+            .clock {
+                @include contacto ( 2.5rem , flex , row , lighter , 0.25rem);
+                .clock p {
+                    @include contacto-p ( flex , column , $texto-general , $texto-tamanio)
+                }
+            }
+            .phone {
+                @include contacto ( 2.5rem , flex , row , lighter , 0.25rem);
+                .phone p {
+                    @include contacto-p ( flex , column , $texto-general , $texto-tamanio)
+                }
+                
+            }
+            .e-mail {
+                @include contacto ( 2.5rem , flex , row , lighter , 0.1rem);
+                .e-mail p {
+                    @include contacto-p ( flex , column , $texto-general , $texto-tamanio)
+                }
+            }
+            
+        }
+    }
+    .container{
+        .row{
+            .navbar{
+                .menu {
+                    .nav-link:hover {
+                        @extend %hover
+                        }
+                    .div ul .li {
+                            text-decoration: none;
+                            margin: 0.25rem;
+                            text-align: center;
+                            display: flex;
+                            padding: 0.25rem 1.5rem;
+                            font-family: $texto-general;
+                            font-size: $texto-tamanio;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        .instagramFacebook {
+            height: 9rem;
+            grid-area: instagramFacebook;
+            @include flex-a (flex , right , end);
+            margin-bottom: 0.5rem;
+        }
+    }

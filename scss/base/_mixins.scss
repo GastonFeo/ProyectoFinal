@@ -1,0 +1,34 @@
+@mixin flex  ($dis , $direction , $just,) {
+    display: $dis;
+    flex-direction: $direction;
+    justify-content: $just;   
+}
+
+@mixin flex-a  ($dir , $direction , $align ) {
+    display: $dir;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin flex-a-j  ($dir , $direction , $align, $just ) {
+    display: $dir;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $just;   
+}
+
+
+@mixin contacto ($rem , $dis , $direction , $font , $mar) {
+    height: $rem;
+    display: $dis;
+    flex-direction: $direction ;
+    font-weight: $font ;
+    margin: $mar ;
+}
+
+@mixin contacto-p ($dis , $direction , $font , $tamanio) {
+    display: $dis;
+    flex-direction: $direction ;
+    font-family: $font ;
+    font-size: $tamanio ;
+}

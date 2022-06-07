@@ -1,0 +1,185 @@
+.nos {
+    background-color: $color-fondo;
+    padding: 0.5rem;
+    height: 43.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "empresa empresa";
+
+    .videoInst {
+        @include flex-a-j (flex, row, center, center);
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .whatsapp {
+        position: fixed;
+        bottom: 25px;
+        right: 5px;
+        display: inline-block;
+    }
+
+    .pulsate-bck {
+        -webkit-animation: pulsate-bck 0.7s infinite;
+        animation: pulsate-bck 0.7s infinite;
+    }
+
+    @-webkit-keyframes pulsate-bck {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        50% {
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+
+    @keyframes pulsate-bck {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        50% {
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+
+    .empresa {
+        grid-area: empresa;
+        @include flex (flex, row , stretch);
+        margin: 1Rem;
+
+        .fotoEmpresa img {
+            width: 80%;
+        }
+
+        p {
+            width: 50rem;
+            font-family: $texto-general;
+            font-weight: bold;
+            font-size: $texto-tamanio + 0.2;
+            @include flex (flex, column, center);
+            padding: 20px;
+            text-align: center;
+        }
+    }
+
+}
+
+//Galeria de Imagenes//
+.container-fluid {
+    .galeria {
+        width: 45%;
+        @include flex (flex, row, center);
+
+        div img {
+            border-radius: 20px;
+        }
+    }
+}
+
+//Maquinaria//
+.maq {
+    height: 100%;
+
+    .machine {
+        grid-template-areas: "lather lather"
+            "mill mill"
+            "lather lather"
+            "mill mill";
+        margin: 0rem 3rem;
+
+        .lather {
+            grid-area: lather;
+            display: flex;
+
+            img {
+                border-radius: 47% 53% 51% 49% / 26% 39% 61% 74%;
+            }
+
+            p {
+                color: whitesmoke;
+                text-align: center;
+                font-family: $texto-general;
+                font-size: smaller;
+                font-weight: 50;
+                @include flex (flex, column, center);
+                width: 50%;
+            }
+        }
+
+        .mill {
+            grid-area: mill;
+            display: flex;
+            flex-direction: row-reverse;
+
+            img {
+                border-radius: 47% 53% 51% 49% / 26% 39% 61% 74%;
+            }
+
+            p {
+                color: whitesmoke;
+                text-align: center;
+                font-family: $texto-general;
+                font-size: smaller;
+                font-weight: 50;
+                @include flex (flex, column, center);
+                width: 50%;
+            }
+        }
+    }
+}
+
+//contactos//
+.container {
+    h1 {
+        .datos {
+            grid-area: datos;
+            margin: 2.5rem;
+            @include flex (flex, column, center);
+
+            span {
+                font-family: $texto-general;
+                font-size: $texto-tamanio;
+            }
+        }
+    }
+
+    .row {
+        .formularioContacto {
+            grid-area: formularioContacto;
+            padding: 1rem 25rem;
+            @include flex (flex, column, center);
+            font-size: small;
+
+            .boton {
+                background-color: $fondo-botones;
+                width: 40%;
+            }
+        }
+    }
+    .whatsapp{
+        position: fixed;
+        bottom: 25px;
+        right: 5px;
+        display: inline-block;
+        -webkit-animation: pulsate-bck 0.7s infinite;
+        animation: pulsate-bck 0.7s infinite;
+    }
+}

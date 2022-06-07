@@ -1,0 +1,12 @@
+%hover {
+    background-color: $fondo-botones;
+    border-radius: 0.25rem;
+    color: white;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    padding: 0.15rem 0.3rem;
+    font-weight: lighter;
+    margin: 0.15rem;
+    text-shadow: inset;
+}
