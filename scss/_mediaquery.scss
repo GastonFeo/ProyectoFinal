@@ -5,102 +5,99 @@
 @media screen and (max-width:768px) {
 
     /*index*/
-    .clock {
+    body header .container-fluid .contacInfo .clock {
         display: none;
     }
-
-    .contacInfo div p span {
-        font-size: small;
+    
+    .contacInfo div p {
+        font-size: 0.69rem;
+        margin-top: 0.2rem;
     }
 
     .nos {
         height: 49.5rem;
+        .empresa {
+            grid-template-areas: "fotoEmpresa"
+                                "historiaEmpresa";
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .p{
+                margin: 2rem;
+                font-size: 0.5rem;
+                align-items: center;
+                justify-content: center;
+                padding: 2px;
+            }    
+        } 
+        .fotoEmpresa {
+            display: flex;
+            justify-content: center;
+        }  
     }
 
-    /*Nosotros*/
-
-    .empresa {
-        grid-template-areas: "fotoEmpresa"
-            "historiaEmpresa";
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .fotoEmpresa {
-        display: flex;
-        justify-content: center;
-    }
-
-    .empresa p {
-        width: 40rem;
-        font-size: 1rem;
-        align-items: center;
-        justify-content: center;
-        padding: 1px;
-    }
-
-    /*Maquinaria*/
-    .lather img {
-        width: 25%;
-    }
-
-    .lather p {
-        font-size: 1rem;
-    }
-
-    .mill img {
-        width: 25%;
-    }
-
-    .mill p {
-        font-size: 1rem;
-    }
-
-    .main {
-        height: 90rem;
-    }
-}
-
-/*Galeria de imagenes*/
-
-    .galeria {
+    .container-fluid .galeria  {
         width: 100%;
 }
 
+    /*Maquinaria*/
+    .maq .machine .lather img{
+        width: 25%;
+    }
+
+    .maq .machine .lather p {
+        font-size: 1rem;
+    }
+
+    .maq .machine .mill img {
+        width: 25%;
+    }
+
+    .maq .machine .mill p {
+        font-size: 1rem;
+    }
+}
+
 /*contactos*/
+.container .row {
+    .maps{
+    display: flex;
+    justify-content: center;
+    }
 .formularioContacto {
-    padding: 1rem 8rem;
-   ;
+    padding: 1rem 9rem;
+}
 }
 
 /*mq 480*/
 
 @media screen and (max-width:480px) {
 
-    /*index*/
-    .contacInfo {
+    
+    header {
+        .navbar{ width: 80%;
+    }
+    .container-fluid .contacInfo {
         display: none;
     }
+}
 
     /*Nosotros*/
 
-    .empresa {
+    .nos .empresa {
         grid-template-areas: "fotoEmpresa"
             "historiaEmpresa";
         flex-direction: column;
         align-items: center;
-    }
-    
-    .empresa p {
-        width: 28rem;
-        font-size: 0.8rem;
+        p {
+            width: 28rem;
+            font-size: 0.8rem;
+        }
+        .empresa img {
+            width: 100%;
+        }
     }
 
-    .empresa img {
-        width: 100%;
-
-    }
 
     /*Galeria imagenes*/
 
@@ -108,21 +105,25 @@
         width: 100%;
     }
 
-     /*Maquinaria*/
-     .lather img {
+    /*Maquinaria*/
+    .maq .machine .lather img {
         width: 30%;
+        margin: 1rem;
     }
 
-    .lather p {
-        font-size:0.9rem;
+    .maq .machine .lather p {
+        font-size:0.8rem;
     }
 
-    .mill img {
+    .maq .machine .mill img {
         width: 30%;
+        margin: 1rem;
     }
 
-    .mill p {
-        font-size: 0.9rem;
+    .maq .machine .mill p {
+        font-size: 0.8rem;
     }
-
+}
+.formularioContacto {
+    padding: 1rem 8rem;
 }
