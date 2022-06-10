@@ -15,7 +15,10 @@
     }
 
     .nos {
-        height: 49.5rem;
+        height: 51rem;
+        .video .videoInst{
+            width: 100%;
+        }
         .empresa {
             grid-template-areas: "fotoEmpresa"
                                 "historiaEmpresa";
@@ -64,8 +67,15 @@
     display: flex;
     justify-content: center;
     }
+    .datos{
+        margin: 0.5rem ;
+    }
 .formularioContacto {
-    padding: 1rem 9rem;
+    margin: 0rem 1rem;
+    padding: 0rem 2rem;
+    div {
+        margin: 0rem 5rem;
+    }
 }
 }
 
@@ -84,20 +94,23 @@
 
     /*Nosotros*/
 
-    .nos .empresa {
+
+    .nos {
+        height: 42.5rem;
+        .empresa {
         grid-template-areas: "fotoEmpresa"
             "historiaEmpresa";
         flex-direction: column;
         align-items: center;
-        p {
-            width: 28rem;
-            font-size: 0.8rem;
+        .historiaEmpresa {
+            font-size: $texto-tamanio;
         }
         .empresa img {
             width: 100%;
         }
+        
     }
-
+}
 
     /*Galeria imagenes*/
 
@@ -124,6 +137,13 @@
         font-size: 0.8rem;
     }
 }
+.container .row{
 .formularioContacto {
-    padding: 1rem 8rem;
+    margin: 0rem;
+    padding: 0rem 0rem;
+    div {
+        margin: 0rem 4.5rem;
+    }
 }
+}
+

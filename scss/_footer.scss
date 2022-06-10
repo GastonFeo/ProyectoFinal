@@ -1,14 +1,14 @@
 footer {
-    padding: 0.2rem;
+    height: 1.5rem;
     .copyRight {
         text-align: center;
         font-family: $texto-general;
-        color: darkgrey;
+        color: #635f5f;
         h3 {
             font-size: $texto-tamanio;
             font-weight: bolder;
             font-style: italic;
-        
+            margin: 0px;
         }
     }
 }
