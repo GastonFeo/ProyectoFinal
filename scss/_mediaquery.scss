@@ -1,5 +1,3 @@
-/*mq*/
-
 /*mq 768px*/
 
 @media screen and (max-width:768px) {
@@ -8,7 +6,7 @@
     body header .container-fluid .contacInfo .clock {
         display: none;
     }
-    
+
     .contacInfo div p {
         font-size: 0.69rem;
         margin-top: 0.2rem;
@@ -16,101 +14,123 @@
 
     .nos {
         height: 51rem;
-        .video .videoInst{
+
+        .video .videoInst {
             width: 100%;
         }
+
         .empresa {
+            width: 80%;
             grid-template-areas: "fotoEmpresa"
-                                "historiaEmpresa";
+                "historiaEmpresa";
+            background-color: $color-fondo;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            .p{
-                margin: 2rem;
+            margin: 0rem;
+            padding: 0;
+
+            .p {
+
                 font-size: 0.5rem;
                 align-items: center;
                 justify-content: center;
-                padding: 2px;
-            }    
-        } 
+
+            }
+        }
+
         .fotoEmpresa {
+            width: 80%;
             display: flex;
             justify-content: center;
-        }  
+        }
     }
 
-    .container-fluid .galeria  {
+    .container-fluid .galeria {
         width: 100%;
-}
+    }
 
     /*Maquinaria*/
-    .maq .machine .lather img{
-        width: 25%;
+    .maq .machine .lather img {
+        width: 30%;
+        padding: 1rem;
     }
 
     .maq .machine .lather p {
         font-size: 1rem;
+        padding: 1rem;
     }
 
     .maq .machine .mill img {
-        width: 25%;
+        width: 30%;
+        padding: 1rem;
+
     }
 
     .maq .machine .mill p {
         font-size: 1rem;
+        padding: 1rem;
     }
 }
 
 /*contactos*/
-.container .row {
-    .maps{
-    display: flex;
-    justify-content: center;
+.container {
+    .row {
+        .maps {
+            display: flex;
+            justify-content: center;
+        }
+
+        .datos {
+            margin: 0.5rem;
+        }
+
+        .rowF {
+            width: 50%;
+            .formularioContacto {
+                margin: 0rem 1rem;
+        }
     }
-    .datos{
-        margin: 0.5rem ;
     }
-.formularioContacto {
-    margin: 0rem 1rem;
-    padding: 0rem 2rem;
-    div {
-        margin: 0rem 5rem;
-    }
-}
 }
 
 /*mq 480*/
 
 @media screen and (max-width:480px) {
 
-    
+
     header {
-        .navbar{ width: 80%;
+        .navbar {
+            width: 80%;
+        }
+
+        .container-fluid .contacInfo {
+            display: none;
+        }
     }
-    .container-fluid .contacInfo {
-        display: none;
-    }
-}
 
     /*Nosotros*/
 
 
     .nos {
         height: 42.5rem;
+
         .empresa {
-        grid-template-areas: "fotoEmpresa"
-            "historiaEmpresa";
-        flex-direction: column;
-        align-items: center;
-        .historiaEmpresa {
-            font-size: $texto-tamanio;
+            grid-template-areas: "fotoEmpresa"
+                "historiaEmpresa";
+            flex-direction: column;
+            align-items: center;
+
+            .historiaEmpresa {
+                font-size: $texto-tamanio;
+            }
+
+            .empresa img {
+                width: 100%;
+            }
+
         }
-        .empresa img {
-            width: 100%;
-        }
-        
     }
-}
 
     /*Galeria imagenes*/
 
@@ -120,30 +140,31 @@
 
     /*Maquinaria*/
     .maq .machine .lather img {
-        width: 30%;
-        margin: 1rem;
+        width: 35%;
+        margin: 0rem;
     }
 
     .maq .machine .lather p {
-        font-size:0.8rem;
+        font-size: 0.8rem;
     }
 
     .maq .machine .mill img {
-        width: 30%;
-        margin: 1rem;
+        width: 35%;
+        margin: 0rem;
     }
 
     .maq .machine .mill p {
         font-size: 0.8rem;
     }
 }
-.container .row{
-.formularioContacto {
-    margin: 0rem;
-    padding: 0rem 0rem;
-    div {
-        margin: 0rem 4.5rem;
+
+.container .row {
+    .formularioContacto {
+        margin: 1rem 0rem;
+        padding: 0rem 0rem;
+
+        div {
+            margin: 0rem 4.5rem;
+        }
     }
 }
-}
-
