@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 header .container .row .navbar .menu .nav-link:hover {
   background-color: #4987c3;
@@ -13,7 +14,8 @@ header .container .row .navbar .menu .nav-link:hover {
   padding: 0.15rem 0.3rem;
   font-weight: lighter;
   margin: 0.15rem;
-  text-shadow: inset; }
+  text-shadow: inset;
+}
 
 header .container-fluid .contacInfo {
   grid-area: contacInfo;
@@ -22,40 +24,53 @@ header .container-fluid .contacInfo {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border-bottom-left-radius: 2rem; }
-  header .container-fluid .contacInfo .clock {
-    height: 2.5rem;
-    display: flex;
-    flex-direction: row;
-    font-weight: lighter;
-    margin: 0.25rem; }
-    header .container-fluid .contacInfo .clock .clock p {
-      display: flex;
-      flex-direction: column;
-      font-family: "Open Sans", sans-serif;
-      font-size: 1rem; }
-  header .container-fluid .contacInfo .phone {
-    height: 2.5rem;
-    display: flex;
-    flex-direction: row;
-    font-weight: lighter;
-    margin: 0.25rem; }
-    header .container-fluid .contacInfo .phone .phone p {
-      display: flex;
-      flex-direction: column;
-      font-family: "Open Sans", sans-serif;
-      font-size: 1rem; }
-  header .container-fluid .contacInfo .e-mail {
-    height: 2.5rem;
-    display: flex;
-    flex-direction: row;
-    font-weight: lighter;
-    margin: 0.1rem; }
-    header .container-fluid .contacInfo .e-mail .e-mail p {
-      display: flex;
-      flex-direction: column;
-      font-family: "Open Sans", sans-serif;
-      font-size: 1rem; }
+  border-bottom-left-radius: 2rem;
+}
+
+header .container-fluid .contacInfo .clock {
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  font-weight: lighter;
+  margin: 0.25rem;
+}
+
+header .container-fluid .contacInfo .clock .clock p {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+header .container-fluid .contacInfo .phone {
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  font-weight: lighter;
+  margin: 0.25rem;
+}
+
+header .container-fluid .contacInfo .phone .phone p {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+header .container-fluid .contacInfo .e-mail {
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  font-weight: lighter;
+  margin: 0.1rem;
+}
+
+header .container-fluid .contacInfo .e-mail .e-mail p {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
 
 header .container .row .navbar .menu .div ul .li {
   text-decoration: none;
@@ -65,7 +80,8 @@ header .container .row .navbar .menu .div ul .li {
   padding: 0.25rem 1.5rem;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 header .instagramFacebook {
   height: 9rem;
@@ -73,7 +89,8 @@ header .instagramFacebook {
   display: flex;
   flex-direction: right;
   align-items: end;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+}
 
 .nos {
   background-color: #c2c3bc;
@@ -83,137 +100,190 @@ header .instagramFacebook {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-template-areas: "empresa empresa"; }
-  .nos h1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-  .nos .videoInst {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    padding: 1rem; }
-  .nos .whatsapp {
-    position: fixed;
-    bottom: 25px;
-    right: 5px;
-    display: inline-block; }
-  .nos .pulsate-bck {
-    -webkit-animation: pulsate-bck 0.7s infinite;
-    animation: pulsate-bck 0.7s infinite; }
+  grid-template-areas: "empresa empresa";
+}
+
+.nos h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nos .videoInst {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding: 1rem;
+}
+
+.nos .whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 5px;
+  display: inline-block;
+}
+
+.nos .pulsate-bck {
+  -webkit-animation: pulsate-bck 0.7s infinite;
+  animation: pulsate-bck 0.7s infinite;
+}
 
 @-webkit-keyframes pulsate-bck {
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1); }
+    transform: scale(1);
+  }
+
   50% {
     -webkit-transform: scale(0.9);
-    transform: scale(0.9); }
+    transform: scale(0.9);
+  }
+
   100% {
     -webkit-transform: scale(1);
-    transform: scale(1); } }
+    transform: scale(1);
+  }
+}
 
 @keyframes pulsate-bck {
   0% {
     -webkit-transform: scale(1);
-    transform: scale(1); }
+    transform: scale(1);
+  }
+
   50% {
     -webkit-transform: scale(0.9);
-    transform: scale(0.9); }
+    transform: scale(0.9);
+  }
+
   100% {
     -webkit-transform: scale(1);
-    transform: scale(1); } }
-  .nos .empresa {
-    grid-area: empresa;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    padding: 2Rem; }
-    .nos .empresa .fotoEmpresa {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 2rem; }
-      .nos .empresa .fotoEmpresa img {
-        width: 80%;
-        padding: 0.9rem;
-        justify-content: center;
-        border: solid black; }
-    .nos .empresa .historiaEmpresa {
-      width: 25rem;
-      font-family: "Open Sans", sans-serif;
-      font-weight: bold;
-      font-size: 1.1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 2rem;
-      margin: 0rem;
-      text-align: center; }
+    transform: scale(1);
+  }
+}
+
+.nos .empresa {
+  grid-area: empresa;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  padding: 2Rem;
+}
+
+.nos .empresa .fotoEmpresa {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.nos .empresa .fotoEmpresa img {
+  width: 80%;
+  padding: 0.9rem;
+  justify-content: center;
+  border: solid black;
+}
+
+.nos .empresa .historiaEmpresa {
+  width: 25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0rem;
+  text-align: center;
+}
 
 .container-fluid .galeria {
   width: 45%;
   display: flex;
   flex-direction: row;
-  justify-content: center; }
-  .container-fluid .galeria div img {
-    border-radius: 20px; }
+  justify-content: center;
+}
+
+.container-fluid .galeria div img {
+  border-radius: 20px;
+}
 
 .maq {
-  height: 100%; }
-  .maq .machine {
-    grid-template-areas: "lather lather" "mill mill" "lather lather" "mill mill";
-    margin: 0rem 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .maq .machine .lather {
-      grid-area: lather;
-      display: flex; }
-      .maq .machine .lather img {
-        border-radius: 47% 53% 51% 49% / 26% 39% 61% 74%;
-        padding: 3rem; }
-      .maq .machine .lather p {
-        color: whitesmoke;
-        text-align: center;
-        font-family: "Open Sans", sans-serif;
-        font-size: smaller;
-        font-weight: 50;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 8rem; }
-    .maq .machine .mill {
-      grid-area: mill;
-      display: flex;
-      flex-direction: row-reverse; }
-      .maq .machine .mill img {
-        border-radius: 47% 53% 51% 49% / 26% 39% 61% 74%;
-        padding: 3rem; }
-      .maq .machine .mill p {
-        color: whitesmoke;
-        text-align: center;
-        font-family: "Open Sans", sans-serif;
-        font-size: smaller;
-        font-weight: 50;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 8rem; }
+  height: 100%;
+}
+
+.maq .machine {
+  grid-template-areas:  "lather lather"
+                        "mill mill"
+                        "lather lather"
+                        "mill mill";
+  margin: 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.maq .machine .lather {
+  grid-area: lather;
+  display: flex;
+}
+
+.maq .machine .lather img {
+  border-radius: 47% 53% 51% 49% / 26% 39% 61% 74%;
+  padding: 3rem;
+}
+
+.maq .machine .lather p {
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: smaller;
+  font-weight: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem;
+}
+
+.maq .machine .mill {
+  grid-area: mill;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.maq .machine .mill img {
+  border-radius: 47% 53% 51% 49% / 26% 39% 61% 74%;
+  padding: 3rem;
+}
+
+.maq .machine .mill p {
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: smaller;
+  font-weight: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem;
+}
 
 .container .row .datos {
   grid-area: datos;
   margin: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-  .container .row .datos span {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1rem; }
+  justify-content: center;
+}
+
+.container .row .datos span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
 
 .container .rowF .formularioContacto {
   padding: 1rem;
@@ -222,23 +292,30 @@ header .instagramFacebook {
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-  .container .rowF .formularioContacto div {
-    margin: 0rem 0rem;
-    padding: 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .container .rowF .formularioContacto .enviar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .container .rowF .formularioContacto .enviar .boton {
-      background-color: #4987c3;
-      width: 25%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
+  justify-content: center;
+}
+
+.container .rowF .formularioContacto div {
+  margin: 0rem 0rem;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .rowF .formularioContacto .enviar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container .rowF .formularioContacto .enviar .boton {
+  background-color: #4987c3;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .container .whatsapp {
   position: fixed;
@@ -246,112 +323,175 @@ header .instagramFacebook {
   right: 5px;
   display: inline-block;
   -webkit-animation: pulsate-bck 0.7s infinite;
-  animation: pulsate-bck 0.7s infinite; }
+  animation: pulsate-bck 0.7s infinite;
+}
 
 footer {
-  height: 1.5rem; }
-  footer .copyRight {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    color: #635f5f; }
-    footer .copyRight h3 {
-      font-size: 1rem;
-      font-weight: bolder;
-      font-style: italic;
-      margin: 0px; }
+  height: 1.5rem;
+}
+
+footer .copyRight {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #635f5f;
+}
+
+footer .copyRight h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  font-style: italic;
+  margin: 0px;
+}
 
 /*mq 768px*/
 @media screen and (max-width: 768px) {
+
   /*index*/
   body header .container-fluid .contacInfo .clock {
-    display: none; }
+    display: none;
+  }
+
   .contacInfo div p {
     font-size: 0.69rem;
-    margin-top: 0.2rem; }
+    margin-top: 0.2rem;
+  }
+
   .nos {
-    height: 51rem; }
-    .nos .video .videoInst {
-      width: 100%; }
-    .nos .empresa {
-      width: 80%;
-      grid-template-areas: "fotoEmpresa" "historiaEmpresa";
-      background-color: #c2c3bc;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 0rem;
-      padding: 0; }
-      .nos .empresa .p {
-        font-size: 0.5rem;
-        align-items: center;
-        justify-content: center; }
-    .nos .fotoEmpresa {
-      width: 80%;
-      display: flex;
-      justify-content: center; }
+    height: 51rem;
+  }
+
+  .nos .video .videoInst {
+    width: 100%;
+  }
+
+  .nos .empresa {
+    width: 80%;
+    grid-template-areas:  "fotoEmpresa"
+                          "historiaEmpresa";
+    background-color: #c2c3bc;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem;
+    padding: 0;
+  }
+
+  .nos .empresa .p {
+    font-size: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nos .fotoEmpresa {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+
   .container-fluid .galeria {
-    width: 100%; }
+    width: 100%;
+  }
+
   /*Maquinaria*/
   .maq .machine .lather img {
     width: 30%;
-    padding: 1rem; }
+    padding: 1rem;
+  }
+
   .maq .machine .lather p {
     font-size: 1rem;
-    padding: 1rem; }
+    padding: 1rem;
+  }
+
   .maq .machine .mill img {
     width: 30%;
-    padding: 1rem; }
+    padding: 1rem;
+  }
+
   .maq .machine .mill p {
     font-size: 1rem;
-    padding: 1rem; } }
+    padding: 1rem;
+  }
+}
 
 /*contactos*/
 .container .row .maps {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .container .row .datos {
-  margin: 0.5rem; }
+  margin: 0.5rem;
+}
 
 .container .row .rowF {
-  width: 50%; }
-  .container .row .rowF .formularioContacto {
-    margin: 0rem 1rem; }
+  width: 50%;
+}
+
+.container .row .rowF .formularioContacto {
+  margin: 0rem 1rem;
+}
 
 /*mq 480*/
 @media screen and (max-width: 480px) {
   header .navbar {
-    width: 80%; }
+    width: 80%;
+  }
+
   header .container-fluid .contacInfo {
-    display: none; }
+    display: none;
+  }
+
   /*Nosotros*/
   .nos {
-    height: 42.5rem; }
-    .nos .empresa {
-      grid-template-areas: "fotoEmpresa" "historiaEmpresa";
-      flex-direction: column;
-      align-items: center; }
-      .nos .empresa .historiaEmpresa {
-        font-size: 1rem; }
-      .nos .empresa .empresa img {
-        width: 100%; }
+    height: 42.5rem;
+  }
+
+  .nos .empresa {
+    grid-template-areas:  "fotoEmpresa"
+                          "historiaEmpresa";
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nos .empresa .historiaEmpresa {
+    font-size: 1rem;
+  }
+
+  .nos .empresa .empresa img {
+    width: 100%;
+  }
+
   /*Galeria imagenes*/
   .galeria div img {
-    width: 100%; }
+    width: 100%;
+  }
+
   /*Maquinaria*/
   .maq .machine .lather img {
     width: 35%;
-    margin: 0rem; }
+    margin: 0rem;
+  }
+
   .maq .machine .lather p {
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+  }
+
   .maq .machine .mill img {
     width: 35%;
-    margin: 0rem; }
+    margin: 0rem;
+  }
+
   .maq .machine .mill p {
-    font-size: 0.8rem; } }
+    font-size: 0.8rem;
+  }
+}
 
 .container .row .formularioContacto {
   margin: 1rem 0rem;
-  padding: 0rem 0rem; }
-  .container .row .formularioContacto div {
-    margin: 0rem 4.5rem; }
+  padding: 0rem 0rem;
+}
+
+.container .row .formularioContacto div {
+  margin: 0rem 4.5rem;
+}
